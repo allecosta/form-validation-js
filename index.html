@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Form-Validation-Js</title>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h3 class="text-blue text-center font-weight-bold" style="font-size: 20px; margin-top: 30px;">
+                INSCREVA-SE
+            </h3>
+        </header>
+        <section>
+            <div class="container">
+                <div class="col-lg-5 m-auto d-block">
+                    <form action="#" onsubmit="return validation()" class="bg-light">
+                        <div class="form-group">
+                            <label for="name" class="font-weight-regular">Nome</label>
+                            <input type="text" name="name" class="form-control" id="name" autocomplete="off">
+                            <span id="name" class="text-danger font-weight-regular"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-regular">Email</label>
+                            <input type="email" name="email" class="form-control" id="emails" autocomplete="off">
+                            <span id="emailsid" class="text-danger font-weight-regular"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="user" class="font-weight-regular">Usuário</label>
+                            <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+                            <span id="username" class="text-danger font-weight-regular"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-regular">Senha</label>
+                            <input type="password" name="pass" class="form-control" id="pass" autocomplete="off">
+                            <span id="passwords" class="text-danger font-weight-regular"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-regular">Confirme a senha</label>
+                            <input type="password" name="conpass" class="form-control" id="conpass" autocomplete="off">
+                            <span id="confrmpass" class="text-danger font-weight-regular"></span>
+                        </div>
+
+                        <input type="submit" name="submit" value="submit" class="btn btn-primary" autocomplete="off">
+                        <input type="reset" name="reset" value="reset" class="btn btn-secondary" autocomplete="off">
+                        <p style="margin-top: 10px;">
+                            Já possui uma conta? <a href="login.html">Entrar</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./js/register.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
