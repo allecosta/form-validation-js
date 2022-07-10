@@ -1,0 +1,39 @@
+body {
+    background: #604888;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+form {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.container-login {
+    margin: 10px;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.input-one {
+    margin-left: 10px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-height: 640px) {
+    form {
+        margin-bottom: 50px;
+    }
+}
