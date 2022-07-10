@@ -2,8 +2,6 @@
   Formulário para cadastro e login de usuário
 </h2>
 
----
-
 ![Home](img/register.png)
 
 ![Home](img/login.png)
@@ -29,5 +27,5 @@ Para o desenvolvimento deste projeto utilizei:
 - JavaScript
 - HTML5
 - CSS3
-- Bootsrap v4.0
+- Bootstrap v4.0
 - Visual studio Code v1.67.1
