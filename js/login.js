@@ -9,14 +9,14 @@ function validation() {
     }
 
     if (user.length <= 3 || user.length > 20) {
-        document.getElementById("username").innerHTML = "O nome de usuário deve conter entre 03 a 20 caracteres";
+        document.getElementById("username").innerHTML = "O nome de usuário deve conter entre 03 e 20 caracteres";
         return false;
     }
 
-    if (!NaN(user)) {
-        document.getElementById("username").innerHTML = "OPS! Somente caracteres são permitidos";
-        return false;
-    }
+    // if (!isNaN(user)) {
+    //     document.getElementById("username").innerHTML = "OPS! Somente caracteres são permitidos";
+    //     return false;
+    // }
 
     // Validacao da senha de usuario
     if (pass == "") {
@@ -25,11 +25,11 @@ function validation() {
     }
 
     if (pass.length <= 5 || pass.length > 20) {
-        document.getElementById("passwords").innerHTML = "A senha de usuário deve conter entre 05 a 20 caracteres";
+        document.getElementById("passwords").innerHTML = "A senha de usuário deve conter entre 05 e 20 caracteres";
         return false;
     }
 
-    if (pass != confrmpass) {
+    if (pass != confirmpass) {
         document.getElementById("confrmpass").innerHTML = "OPS! A senha não corresponde com à senha de confirmação";
         return false;
     }
