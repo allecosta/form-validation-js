@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Form-Validation-Js</title>
 </head>
 
 <body>
     <main>
         <header>
-            <h3 class="text-blue text-center font-weight-bold" style="font-size: 25px; margin-top: 30px;">
+            <h3 class="text-blue text-center font-weight-bold">
                 Login
             </h3>
         </header>
@@ -20,18 +21,19 @@
             <div class="container">
                 <div class="col-lg-5 m-auto d-block">
                     <form action="#" onsubmit="return validation()" class="bg-light">
-                        <div class="form-group">
+                        <div class="form-group container-login">
                             <label for="user" class="font-weight-regular">Usuário</label>
                             <input type="text" name="user" class="form-control" id="user" autocomplete="off">
                             <span id="username" class="text-danger font-weight-regular"></span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group container-login">
                             <label class="font-weight-regular">Senha</label>
                             <input type="password" name="pass" class="form-control" id="pass" autocomplete="off">
                             <span id="passwords" class="text-danger font-weight-regular"></span>
                         </div>
-                        <input type="submit" name="submit" value="Entrar" class="btn btn-success" autocomplete="off">
-                        <p style="margin-top: 10px;"">
+                        <input type="submit" name="submit" value="Entrar" class="btn btn-success container-login"
+                            autocomplete="off">
+                        <p class="container-login">
                             Ainda não tem uma conta? <a href=" index.html">Inscreva-se</a>
                         </p>
                     </form>
